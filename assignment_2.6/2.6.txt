@@ -1,0 +1,65 @@
+1) Write a program to accepts two numbers from stdin and find all the odd as well as even
+numbers present in between them.
+
+class acad
+{
+public static void main(String args[])
+{
+int a,b;
+Scanner s=new Scanner(System.in);
+a=s.nextInt();
+b=s.nextInt();
+for(int i=a+1;i<b;i++)
+{
+System.out.println(i);
+}
+}
+}
+
+2) Joe is scared to go to school. When her dad asked the reason, joe said she is unable to
+complete the task given by her teacher. The task was to find the “first 10 multiples” of the
+number entered from stdin.
+
+class acad
+{
+public static void main(String args[])
+{
+int a;
+Scanner s=new Scanner(System.in);
+a=s.nextInt();
+for(int i=1;i<11;i++)
+{
+System.out.println(a+"*"+i+"="+(a*i));
+}
+}
+}
+
+
+3) Write a program consisting method sum() and demonstrate the concept of method
+overloading using this method.
+
+class acad
+{
+void sum(int a,int b)
+{
+System.out.println("Sum is:"+(a+b));
+}
+void sum(double a,double b)
+{
+System.out.println("Sum is:"+(a+b));
+}
+public static void main(String args[])
+{
+int a,b;
+double c,d;
+Scanner s=new Scanner(System.in);
+System.out.println("enter two integers:");
+a=s.nextInt();
+b=s.nextInt();
+sum(a,b);
+System.out.println("enter two float value:");
+c=nextDouble();
+d=nextDouble();
+sum(c,d);
+}
+}

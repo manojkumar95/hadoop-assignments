@@ -1,0 +1,49 @@
+1)Characteristics of BIG DATA
+
+Volume - dealing with vast amounts of data generated every second. 
+Velocity - speed at which new data is generated and the speed at which data moves around.    
+Variety - different types of data we can now use. 
+Veracity - trustworthiness of the data
+Value - turning big data into values 
+
+
+
+2)Possible solutions for solving bigdata
+
+SCALE-UP AND SCALE-OUT
+
+1. Scale Up
+• Increase the configuration of a single system
+• Like disk capacity, RAM, data transfer speed
+• Complex, costly, and time consuming process
+2. Scale Out
+• Use multiple commodity (economical) machines and distribute the load of
+storage/processing among them
+• Economical and quick to implement as it focuses on distribution of load
+• Instead of having a single system with 10 TB of storage and 80 GB of RAM,
+use 40 machines with 256 GB of storage and 2 GB of RAM
+
+
+
+3)scale-up vs scale-out
+
+To increase the capacity and performance of the array more shelves full of disks were added to the same controllers.
+
+Scale-Up Expansion
+This kind of expansion is what is known as “scale-up” in storage terminology.  At first, adding more disks improves performance because disk throughput was probably the limiting factor from a performance standpoint. However, as the load on the array climbed — a situation often driven by virtualization — and more disks were added, the two controllers themselves became a bottleneck as each began to require more and more CPU for RAID calculations.  Eventually, enough disks were added that the controllers were simply saturated and could do no more. Adding more and faster disks behind an overloaded controller pair simply places more overload on the controllers. In these systems once the controllers are the bottleneck there is little you can do, apart from buying an additional new array with its own pair of controllers and moving some of the workload (VMs) onto the new array.
+
+Scale-Out Expansion
+
+While scaling out isn’t necessarily a new concept, it has gained new life as storage startups create new structures that leverage the power of modern x86 servers in order to address the limitations of older scale-up architectures. Rather than using a custom controller platform, these new scale-out storage systems use a group of x86 servers to form the storage cluster. Each server is loaded with disks and uses a network — usually Ethernet — to talk to the other servers in the storage array. The group of servers together forms a clustered storage array and provides LUNs or file shares over a network just like a traditional array. Adding additional nodes of disks to a scale out array actually adds another x86 server to the cluster.  At the same time, doing so adds more network ports, more CPU and more RAM. As the capacity of a scale-out array increases so does its performance, adding nodes usually results in linear performance improvements. Adding nodes is generally non-disruptive, so a normal maintenance window can be used to add capacity and performance to the array, rather than a full system outage.
+
+Scale-Out as Needs Arise
+
+A major benefit to these emerging scale out solutions is that the cost of upgrades is generally low; additional nodes are generally the same price as the first nodes, and there is very little operational impact to adding nodes. This means that it is sensible to start with enough capacity and performance for current demand plus a few months of growth, buying new nodes as consumption increases. There is no need to buy three years’ worth of forecast growth in the initial purchase.  This also means that it is quick and fairly easy to add capacity to cope with the large new user count for a new project, reorganization or company acquisition.  Agility is good.
+
+Scale for Performance
+
+The other major benefit is the ability to reach very high performance levels or extreme capacity. If each node has a modest 20TB usable capacity and delivers 20,000 IOPS then a twenty node cluster should deliver 400TB and 400,000 IOPS. Of course at some point even a scale-out array will stop scaling; the design of the cluster software will determine how many nodes the cluster can handle. Some scale out storage is limited to eight server nodes; other arrays will work with dozens or hundreds of nodes. If the array architecture scales to a hundred nodes then these hero numbers are Petabytes and a millions of IOPS.
+
+Scale-Out Risks
+
+Naturally there are risks in the scale-out architecture. The first is that each of those x86 servers is a failure domain that didn’t exist in the scale up environment. This is usually handled by the layout of data on the array; copies of all data are kept on at least two nodes (this is called replica-based data protection). Another risk is that code upgrades to the nodes are more complex; rolling out new software to a hundred nodes isn’t a trivial task. Luckily these architectures have been around for a while so update mechanisms tend to be built in and nodes with disparate code versions tends to be handled automatically. Do make sure the upgrade methodology for any array you buy suits your use. There is also a possible issue if the configuration of the nodes is fixed; the balance of capacity and performance in each node may not match your requirements. If you need a high performance array for a small amount of very hot data like a transactional database then your balance will be very different from someone who needs to house a large cold data set like a document management system. Make sure you won’t need to buy an excessive number of nodes to meet either your capacity or performance requirements.

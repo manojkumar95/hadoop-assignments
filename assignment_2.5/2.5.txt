@@ -1,0 +1,58 @@
+1. Explain what is a cluster and what is a hadoop cluster.
+
+Answer:
+
+Cluster:
+A cluster is a group of loosely or tightly connected computers/servers and other resources that act like a single system and enable high availability and, in some cases, load balancing and parallel processing. Clusters are controlled by a single server in most cases.
+Clusters have each node set to perform the same task, controlled and scheduled by software. 
+The maximum number of clusters on a hard disk depends on the size of a FAT table entry.
+Size of cluster is variable.
+
+Hadoop Cluster:
+Hadoop cluster is a group of loosely or tightly connected computers/servers and other resources used for hadoop to process huge and complex data.
+A Hadoop cluster is a computational cluster designed specifically for storing and analyzing huge amounts of unstructured data in a distributed computing environment. 
+Such clusters run Hadoop's open source distributed processing software on low-cost commodity computers. 
+Typically one machine in the cluster is designated as the NameNode and another machine the as JobTracker. 
+These are the masters. 
+The rest of the machines in the cluster act as both DataNode and TaskTracker. 
+These are the slaves. 
+Hadoop clusters are often referred to as "shared nothing" systems because the only thing that is shared between nodes is the network that connects them. 
+Hadoop clusters are known for boosting the speed of data analysis applications. 
+They also are highly scalable because if a cluster's processing power is overwhelmed by growing volumes of data, additional cluster nodes can be added to increase throughput. 
+Hadoop clusters also are highly resistant to failure because each piece of data is copied onto other cluster nodes, which ensures that the data is not lost if one node fails.
+Large Hadoop Clusters are arranged in several racks. Network traffic between different 
+nodes in the same rack is much more desirable than network traffic across the racks
+
+2. Explain the components of Hadoop 1.x
+
+Answer:
+There are 5 components in Hadoop namely:
+
+	•Namenode
+	•Secondary Namenode
+	•Datanode
+	•JobTracker
+	•TaskTracker
+
+NameNode:
+• Contains the Hadoop FileSystem Tree and other metadata information about files and directories.
+• Contains in-memory mapping of which blocks are stored in which datanode.
+
+
+Secondary Namenode:
+• Performs house-keeping activities for NameNode, like periodic merging of namespace and edits.
+• This is not a back up for NameNode.
+
+DataNode:
+• Stores actual data blocks of file in HDFS on its own local disk.
+• Sends signals to NameNode periodically (called as Heartbeat) to verify if it is active.
+• Sends block reporting to the NameNode on cluster startup as well as periodically at every 10th Heartbeat
+• The DataNode are the workhorse of the system
+• They perform all the block operations, including periodic the Checksum. They receive instructions from the NameNode of where to put the blocks and how to put the blocks.
+
+JobTracker (Not present in Hadoop 2.x)
+• Controls overall execution of map reduce jobs
+
+TaskTracker (Not present in Hadoop 2.x)
+• Runs individual map-reduce jobs on DataNodes
+• Periodically communicates with the JobTracker to give updates and receive instructions 

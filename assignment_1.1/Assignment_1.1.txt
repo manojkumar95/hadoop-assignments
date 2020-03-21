@@ -1,0 +1,65 @@
+
+1. Various sources of Big Data
+
+Various sources of Big Data are 
+
+
+*Social media - Various social media like twitter, facebook, youtube generates large amount of heterogeous data
+.
+*Business applications- There are many business applications available where large number of clients are accessing and genarting enormous amounnt of data per seconds.
+
+*Sensor data - Sensors are used in many areas which is used to collect various data about the particular change or any pattern which stores large amount of data.
+
+*Archieve data - It consists of scanned documents, medical records and insurance forms etc of many customers. 
+
+*Media - It consists of data such as postcards, images, audio and video etc.
+
+*Log data - It consists of various event logs data, business logs and audit logs.
+
+
+
+2. 3 V's of Big data 
+
+
+
+1. Velocity - The speed of the data which is being stored.
+
+2. Variety - The number of different data types and sources it can handle.
+
+3. Volume - The amount of data it can store.
+
+
+
+3. Horizontal Scaling and Vertical Scaling
+
+
+
+Horizontal Scaling - It is adding or increasing the number of nodes in the system.
+For example, adding a Web Server for every three systems to function effectively.
+
+
+Vertical Scaling - It means adding or increasing the resources of a single node or a system.
+For examply, increasing the RAM of a computer.
+
+
+
+4. Need and Working of Hadoop
+
+
+
+Needs:
+
+
+*It provides single version of truth.
+
+*Faster data processing.
+
+
+
+Working:
+
+     Hadoop is an open source software to handle large amount of data.
+Its core part consists of storage part known as Hadoop Distributed File Systems(HDFS) and
+the processing part know as MapReduce programming model.
+Hadoop splits the data into larger blocks and
+distributes them across the nodes of the cluster.                                                          

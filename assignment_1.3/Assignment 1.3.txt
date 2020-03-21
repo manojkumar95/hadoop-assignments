@@ -1,0 +1,45 @@
+1)pwd
+This command reports the current directory path
+
+2)vi
+This command starts the vi text editor. 
+
+3)touch
+touch lets you change the date on a file. Can also be used to create a blank file.
+
+4)mkdir
+mkdir is a command for creating a directory.
+
+5)rm
+rm command is used in removing a file
+
+6)ls
+ls is a command for listing the files in current directory.
+
+7)Echo
+this command is similar to 
+printing statements in programming languages
+
+8)cat
+used to display contents of a file
+
+9)who
+it lists the name of user logged in
+
+10)cd
+to change directory from one to another
+
+11)date
+print the current date along with the time
+
+12)cal
+print the calendar details of present month
+
+13)mv
+move file from one location to another
+
+14)cp
+copy the sourcefile contents in the destination file also
+
+15)which
+identify the place where executable files are located

@@ -1,0 +1,100 @@
+1)hadoop in laymen terms
+
+Hadoop is the main component for analyzing large volumes of data.
+
+Big Data is large volumes of structured and unstructured data collected on a daily basis and this data is processed in Hadoop framework.
+
+Advantage of hadoop over RDBMS is that, it can process both structured and unstructured data.
+
+Collecting and analyzing Big Data gives organizations enhanced insight, decision making, and process automation.
+
+Hadoop is an open source, Java-based programming framework that supports the processing and storage of extremely large data sets in a distributed computing environment. It is part of the Apache project sponsored by the Apache Software Foundation.
+
+
+
+2)components of hadoop framework
+
+1) Hadoop Common-
+
+Apache Foundation has pre-defined set of utilities and libraries that can be used by other modules within the Hadoop ecosystem.
+
+2) Hadoop Distributed File System – It is used to store and dump huge datsets. HDFS comprises of 3 important components-NameNode, DataNode and Secondary NameNode.
+Hadoop MapReduce – MapReduce is mainly the programming aspect of Hadoop that allows processing of large volumes of data.
+
+There is also a provision that breaks down requests into smaller requests, which are then sent to multiple servers. This allows utilization of the scalable power of the CPU.
+
+HBASE – HBASE happens to be a layer that sits atop the HDFS and has been developed by means of the Java programming language. HBASE primarily has the following aspects –
+
+Non relational
+Highly scalable
+Fault tolerance
+Every single row that exists in HBASE is identified by means of a key. The number of columns is also not defined, but rather grouped into column families.
+
+Zookeeper – This is basically a centralized system that maintains –
+
+Configuration information
+Naming information
+Synchronization information
+Besides these, Zookeeper is also responsible for group services and is utilized by HBASE. It also comes to use for MapReduce programs.
+
+Solr/Lucene – This is a search engine. Its libraries are developed by Apache.
+
+Programming Languages – There are basically two programming languages,
+
+Hive
+PIG
+Besides these, there are a few other programming languages that can be used for writing programs, namely C, JAQL and Java. We can also make direct usage of SQL for interaction with the database, although that requires the use of standard JDBC or ODBC drivers.
+
+
+
+3)Reason why you should learn data analytics
+
+ 1. Data analytics is now a priority for top organizations
+
+With market competition stiffening, top organizations are turning to data analytics to identify new market opportunities for their services and products. As things stand today, 77% of top organizations consider data analytics a critical component of business performance. What this means is that big data professionals have a huge influence on company policies and marketing strategies.
+
+2. Increasing job opportunities
+
+As companies begin to realize that they have no capacity to comprehensively gather, interpret and use data, they are beginning to look for specialists who can do so. If you look at all the major job opportunity platforms such as Indeed and Dice, you will see that there are increasing number of job postings looking for data analysts and consultants. The demand for professionals with this particular skill set is on the rise while the supply remains low. This creates great job opportunities for individuals within this field.
+
+3. Increasing pay for data analytics professionals
+
+As the demand steadily increases and the supply remains low, data analytics professionals are getting paid more and more. In India, as it stands today, data analytics professionals are paid on average 50% more than their counterparts in other IT based professions. This trend is evident across the globe as more and more companies realize just how important these professionals are to the organization.
+
+4. Big data analytics is everywhere
+
+Just as it has become imperative to use computers in today’s workplace, the use data analytics professionals to foster growth is slowly catching on. There is practically no sector which has remained untouched from the reach of Data Analytics.
+
+5. You will have various job titles from which to choose
+
+A data analytics professional has a broad range of job titles and fields from which to choose. Since big data is used almost everywhere today, you can choose to be a:
+
+- Metrics and Analytics Specialist
+
+- Data Analyst
+
+- Big Data Engineer
+
+- Data Analytics Consultant
+
+These are just some of the job titles you could hold in big organizations such as IBM, ITrend, Opera, Oracle, etc and the possibilities are immense.
+
+6. You will be at the core of decision-making in the company
+
+One of the leading causes of job place dissatisfaction is that most employees feel as if they do not have any decision-making power. They often feel like just another cog in the great corporate wheel. As a data analytics professional, you will be at the core of decision-making in your chosen company. In fact, you will be an integral part of business decisions and future strategies, thus giving you an important role and purpose within the organization.
+
+7. Adoption rate of big data analytics is high
+
+Just as companies started turning to social media for brand advertising and customer engagement, they have also started turning to data analytics as well. Today, it is almost impossible to find any brand that does not have social media presence. The same will be true as far as data analytics adaptation is concerned. In the very near future, every company will need data analytics professionals. This makes it a wise career move that actually has a future in business.
+
+8. Data analytics is taking over faster than expected
+
+A survey conducted by Nimbus Ninety shows that data analytics is taking over much faster than was projected. The survey found that data analytics tops the list of technologies to look out for in the coming 3 years.
+
+9. It represents perfect freelancing opportunities
+
+In the near future, a vast majority of the workforce will not want to be tied to just one employer. People are steadily looking for ways to diversify their sources of income and methods through which they can find the perfect work-life balance. Data analytics, being that it is a matter of studying numbers, trends, and data in general, gives you the perfect opportunity to become a well-paid freelancer or consultant for some of the biggest firms in the world. Majorly IT based, this kind of job can be done from anywhere in the world at any given time. Therefore, you do not have to be tied to a desk.
+
+10. Develop new revenue streams
+
+With your ability to analyze and put good data information to good use, you can easily identify new and unexploited streams of revenue generation. This is one of the best ways to enrich your life by increasing your earnings.

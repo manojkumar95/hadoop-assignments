@@ -1,0 +1,86 @@
+1. Explain the importance of Name node in Hadoop cluster
+
+Answer:
+The NameNode is an important constituent of the HDFS file system. 
+• Contains the Hadoop FileSystem Tree and other metadata information about files and directories 
+• Contains in-memory mapping of which blocks are stored in which datanode
+• Namenode does not store data of any files.
+Namenode can be used to perform operations such as add/copy/move/delete a file. 
+The NameNode responds the successful requests by returning a list of relevant DataNode servers where the data lives.
+The NameNode is a Single Point of Failure for the HDFS Cluster. 
+HDFS is not currently a High Availability system. 
+When the NameNode goes down, the file system goes offline. 
+
+• NameNode contains two important files on its hard disk:
+1. fsimage (file system image)
+It contains:
+• All directory structure of HDFS
+• Replication level of file
+• Modification and access times of files
+• Access permissions of files and directories
+• Block size of files
+• The blocks constituting a file
+2. Edits
+• When any write operation takes place in HDFS, the directory structure gets modified
+• These modifications are stored in the memory as well as in edits files (edits files are stored on hard disk)
+• If existing fsimage file gets merged with edits, we’ll get an updated fsimage file
+• This process is called Checkpointing and is carried out by the Secondary NameNode. 
+  It takes fsimage and edits files from NameNode and returns updated fsimage file after merging.
+2. Practice the beginners commands for HDFS from the below link
+https://acadgild.com/blog/hdfs-commands-for-beginners/
+
+Answer:
+
+1. Put Command
+The 'put' command feeds the data in to the HDFS.
+Syntax: hadoop dfs –put </source path> </destination path>
+
+2. List Command
+The ‘list’ command displays all the available files inside a particular path.
+Syntax: hadoop dfs –ls </source path>
+
+3.Get Command
+The ‘get’ command copies the entire contents of the mentioned file to the local drive.
+Syntax: hadoop dfs –get </source path> </destination path>
+
+4. Make Directory Command
+The ‘mkdir’ command creates a new directory in the specified location.
+Syntax: hadoop dfs –mkdir </source path>
+
+5. View contents of particular file
+The ‘cat’ command is used to display all the contents of a file.
+Syntax: hadoop dfs –cat </path[filename]>
+
+6.Duplicating a Complete File inside the HDFS.
+The ‘copyfromlocal’ command will copy file from the local file system to the HDFS.
+Syntax: hadoop dfs –copyFromLocal </source path> </destination path>
+
+7.Duplicating a File from HDFS to the Local File System.
+The ‘copytolocal’ command will copy files from the HDFS to the local file system.
+Syntax: hadoop dfs –copyToLocal </source path> </destination path>
+
+8.Removing the File
+The command ‘rm’ will delete the file stored inside the HDFS.
+Syntax: hadoop dfs –rm </path[filename]>
+
+9.Run a DFS Filesystem to Check Utility
+The command ‘fsck’ is used for checking the consistency of a file system
+Syntax: hadoop fsck </file path>
+
+10.Run a Cluster Balancing Utility
+The command ‘balancer’ will check for work load on nodes in cluster and balance it.
+Syntax: hadoop balancer
+
+11.Check Directory Space in HDFS
+The command will show the file size occupied by file inside cluster.
+Syntax: hadoop dfs -du -s -h </file path>
+
+12. List all the Hadoop File System Shell Commands
+The ‘fs’ command lists down all the shell commands of the Hadoop File System.
+Syntax: hadoop fs [options]
+
+13.Asking for Help
+The ‘help’ command is for asking for help or querying a particular question.
+Command: hadoop fs -help
+
+
